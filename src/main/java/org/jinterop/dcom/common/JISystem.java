@@ -125,11 +125,11 @@ public final class JISystem {
             synchronized (JISystem.class) {
                 try {
                     if (resourceBundle == null) {
-                        resourceBundle = ResourceBundle.getBundle("org.jinterop.dcom.jierrormessages", locale);
+                        resourceBundle = ResourceBundle.getBundle("jierrormessages", locale);
                     }
                 } catch (MissingResourceException ex) {
                     //now use the parent US english bundle , which you already have
-                    resourceBundle = ResourceBundle.getBundle("org.jinterop.dcom.jierrormessages");
+                    resourceBundle = ResourceBundle.getBundle("jierrormessages");
                 }
             }
         }
