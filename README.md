@@ -7,6 +7,7 @@ Added support for Win10 and OPC HDA.
 ## Quickstart
 
 Add to POM file:
+```
 <repositories>
 		<repository>
 			<id>opcDA-mvn-repo</id>
@@ -24,5 +25,5 @@ Add to POM file:
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 </dependencies>
-
+```
 
