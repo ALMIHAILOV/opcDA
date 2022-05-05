@@ -28,6 +28,7 @@ import org.openscada.opc.dcom.da.OPCNAMESPACETYPE;
 import org.openscada.opc.dcom.da.OPCSERVERSTATUS;
 import org.openscada.opc.dcom.da.impl.OPCBrowseServerAddressSpace;
 import org.openscada.opc.dcom.da.impl.OPCGroupStateMgt;
+import org.openscada.opc.dcom.da.impl.OPCItemProperties;
 import org.openscada.opc.dcom.da.impl.OPCServer;
 import org.openscada.opc.lib.common.AlreadyConnectedException;
 import org.openscada.opc.lib.common.ConnectionInformation;
@@ -376,6 +377,8 @@ public class Server
         this.defaultActive = defaultActive;
     }
 
+    public OPCItemProperties getItemPropertiesService() {return this.server.getItemPropertiesService();}
+
     /**
      * Get the flat browser
      * @return The flat browser or <code>null</code> if the functionality is not supported 
@@ -478,5 +481,9 @@ public class Server
             this.server.removeGroup ( group.getServerHandle (), force );
             this.groups.remove ( group.getServerHandle () );
         }
+    }
+
+    public OPCServer getOPCServer() {
+        return this.server;
     }
 }

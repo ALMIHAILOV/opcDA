@@ -997,7 +997,7 @@ public class JICallBuilder extends NdrObject implements Serializable {
         //interpret based on the out params flags
         JIOrpcThat orpcThat = JIOrpcThat.decode(ndr);
         readPacket(ndr, false);
-        readResult(ndr);
+        //readResult(ndr);
     }
 
     /**

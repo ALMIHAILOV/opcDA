@@ -867,7 +867,7 @@ public final class JIVariant implements Serializable {
     }
 
     /**
-     * Setting up a <code>VARIANT</code> with an <code>java.net.sourceforge.jtds.net.sourceforge.jtds.util.Date</code>.
+     * Setting up a <code>VARIANT</code> with an <code>java.net.sourceforge.jtds.util.Date</code>.
      * Used via serializing the <code>VARIANT</code>.
      *
      * @param value
@@ -877,7 +877,7 @@ public final class JIVariant implements Serializable {
     }
 
     /**
-     * Setting up a <code>VARIANT</code> with an <code>java.net.sourceforge.jtds.net.sourceforge.jtds.util.Date</code>.
+     * Setting up a <code>VARIANT</code> with an <code>java.net.sourceforge.jtds.util.Date</code>.
      * Used via serializing the <code>VARIANT</code>.
      *
      * @param value
@@ -1248,7 +1248,7 @@ public final class JIVariant implements Serializable {
     }
 
     /**
-     * Retrieves the contained object as <code>java.net.sourceforge.jtds.net.sourceforge.jtds.util.Date</code>.
+     * Retrieves the contained object as <code>java.net.sourceforge.jtds.util.Date</code>.
      *
      * @return
      * @throws JIException

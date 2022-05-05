@@ -16,7 +16,7 @@
  */
 package org.jinterop.dcom.impls.automation;
 
-//import java.net.sourceforge.jtds.net.sourceforge.jtds.util.UUID;
+//import java.net.sourceforge.jtds.util.UUID;
 
 import org.jinterop.dcom.core.JIPointer;
 import org.jinterop.dcom.core.JIStruct;

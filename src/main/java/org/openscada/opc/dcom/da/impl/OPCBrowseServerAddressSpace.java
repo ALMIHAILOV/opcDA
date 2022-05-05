@@ -101,7 +101,6 @@ public class OPCBrowseServerAddressSpace extends BaseCOMObject
         callObject.addOutParamAsType ( IJIComObject.class, JIFlags.FLAG_NULL );
 
         Object result[] = Helper.callRespectSFALSE ( getCOMObject (), callObject );
-
         return new EnumString ( (IJIComObject)result[0] );
     }
 

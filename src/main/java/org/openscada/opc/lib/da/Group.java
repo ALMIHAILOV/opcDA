@@ -218,6 +218,7 @@ public class Group
         // if we have failed items then throw an exception with the result
         if ( failedItems.size () != 0 )
         {
+            //_log.warn(String.format ("Not found items: %s", failedItems));
             throw new AddFailedException ( failedItems, findItems ( foundItems ) );
         }
 

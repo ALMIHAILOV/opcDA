@@ -176,7 +176,7 @@ public final class JIStruct implements Serializable {
     }
 
     /**
-     * Returns all members as java.net.sourceforge.jtds.net.sourceforge.jtds.util.List. <br>
+     * Returns all members as java.net.sourceforge.jtds.util.List. <br>
      *
      * @return
      */

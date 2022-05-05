@@ -88,7 +88,7 @@ public final class JIComRuntimeEndpoint extends ConnectionOrientedEndpoint {
                         JISystem.getLogger().log(Level.FINEST, Hexdump.toHexString(buffer.buf));
                     }
                     // System.err.println("Vikram: " + Long.toString(Thread.currentThread().getId()));
-                    // jcifs.net.sourceforge.jtds.net.sourceforge.jtds.util.Hexdump.hexdump(System.err, buffer.buf, 0, buffer.buf.length);
+                    // jcifs.net.sourceforge.jtds.util.Hexdump.hexdump(System.err, buffer.buf, 0, buffer.buf.length);
                 }
                 ndr.setFormat(request.getFormat());
                 workerObject.setOpnum(request.getOpnum());

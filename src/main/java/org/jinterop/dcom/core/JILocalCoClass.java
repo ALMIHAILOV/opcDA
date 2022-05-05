@@ -44,7 +44,7 @@ import java.util.logging.Level;
 public final class JILocalCoClass implements Serializable {
 
     private static final long serialVersionUID = 5542223845228327383L;
-    private static Random randomGen = new Random(Double.doubleToRawLongBits(Math.random()));
+    private static final Random randomGen = new Random(Double.doubleToRawLongBits(Math.random()));
     private final int identifier;
     private WeakReference interfacePointer = null;
     private boolean isAlreadyExported = false;
@@ -53,11 +53,11 @@ public final class JILocalCoClass implements Serializable {
 
     private static final String IID_IDispatch = "00020400-0000-0000-c000-000000000046";
 
-    private ArrayList listOfSupportedInterfaces = new ArrayList();
+    private final ArrayList listOfSupportedInterfaces = new ArrayList();
 
-    private ArrayList listOfSupportedEventInterfaces = new ArrayList();
+    private final ArrayList listOfSupportedEventInterfaces = new ArrayList();
 
-    private HashMap mapOfIIDsToInterfaceDefinitions = new HashMap();
+    private final HashMap mapOfIIDsToInterfaceDefinitions = new HashMap();
 
     private JISession session = null;
 
@@ -67,10 +67,10 @@ public final class JILocalCoClass implements Serializable {
 
     }
 
-    private Map ipidVsIID = new HashMap();// will use this to identify which IID is being talked about
+    private final Map ipidVsIID = new HashMap();// will use this to identify which IID is being talked about
     //if it is IDispatch then delegate to it's invoke.
 
-    private Map IIDvsIpid = new HashMap();// will use this to identify which IPID is being talked about
+    private final Map IIDvsIpid = new HashMap();// will use this to identify which IPID is being talked about
 
     private void init(JILocalInterfaceDefinition interfaceDefinition, Class clazz, Object instance, boolean realIID) {
         listOfSupportedInterfaces.add(IID_IDispatch.toUpperCase()); //IDispatch
@@ -287,7 +287,7 @@ public final class JILocalCoClass implements Serializable {
      * @exclude
      */
     boolean isAssociatedReferenceAlive() {
-        return interfacePointer == null ? false : (interfacePointer.get() != null);
+        return interfacePointer != null && (interfacePointer.get() != null);
     }
 
     boolean isAlreadyExported() {

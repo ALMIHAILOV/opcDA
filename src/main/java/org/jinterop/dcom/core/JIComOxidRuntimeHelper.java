@@ -178,7 +178,7 @@ final class JIComOxidRuntimeHelper extends Stub {
 //This object should have serialized access only , i.e at a time only 1 read --> write , cycle should happen
 // it is not multithreaded safe.
 class OxidResolverImpl extends NdrObject implements IJICOMRuntimeWorker {
-    //override read\write\opnum etc. here, use the net.sourceforge.jtds.net.sourceforge.jtds.util apis to decompose this.
+    //override read\write\opnum etc. here, use the net.sourceforge.jtds.util apis to decompose this.
 
     private int opnum = -1;
     private NdrBuffer buffer = null;
@@ -471,7 +471,7 @@ class OxidResolverImpl extends NdrObject implements IJICOMRuntimeWorker {
 //This object should have serialized access only , i.e at a time only 1 read --> write , cycle should happen
 //it is not multithreaded safe.
 class RemUnknownObject extends NdrObject implements IJICOMRuntimeWorker {
-    //override read\write\opnum etc. here, use the net.sourceforge.jtds.net.sourceforge.jtds.util apis to decompose this.
+    //override read\write\opnum etc. here, use the net.sourceforge.jtds.util apis to decompose this.
 
     private int opnum = -1;
     private NdrBuffer buffer = null;

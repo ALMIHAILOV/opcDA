@@ -29,7 +29,7 @@ import java.util.List;
 
 public class EnumString extends BaseCOMObject
 {
-    public static final int DEFAULT_BATCH_SIZE = Integer.getInteger ( "openscada.dcom.enum-batch-size", 10 );
+    public static final int DEFAULT_BATCH_SIZE = Integer.getInteger ( "openscada.dcom.enum-batch-size", 50000 );
 
     public EnumString ( final IJIComObject enumStringObject ) throws IllegalArgumentException, UnknownHostException, JIException
     {
